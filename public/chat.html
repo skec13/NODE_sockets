@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Welcome to the chat app</h1>
+    <div id="main-div" style="display: flex; flex-direction: row">
+        <div id="left-div" style="flex: 1">
+            <p>Users: </p>
+            <div id="users"></div>
+        </div>
+        <div id="right-div" style="flex: 2">
+            <p>Messages: </p>
+            <form id="message-form">
+                <input type="text" name="message" placeholder="message" style="margin-bottom: 5px;">
+                <button type="submit" id="submit-btn" style="margin-bottom: 5px;">Submit</button>
+            </form>
+
+            <button type="button" id="send-location" style="margin-bottom: 5px;">Send Location</button>
+
+            <div id="messages"></div>
+
+        </div>
+    </div>
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/chat.js"></script>
+    <script type="text/javascript" src="/js/libs/moment.js"></script>
+
+</body>
+</html>
